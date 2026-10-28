@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Event Handling</title>
+
+    <style>
+        h1 {
+            color: green;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        button {
+            background-color: pink;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #box {
+            width: 90%;
+            height: 600px;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box">
+        <h1>JAVASCRIPT EVENT HANDLING</h1>
+
+        <p>Click on button to change the background color</p>
+
+        <button onclick="changeColor()">Click here</button>
+
+        <p id="msg"></p>
+    </div>
+
+</body>
+
+<script>
+    function changeColor() {
+        document.getElementById("box").style.backgroundColor = "yellow";
+
+        document.getElementById("msg").innerHTML = "color changed";
+    }
+</script>
+
+</html>

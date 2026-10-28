@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>mouse event</title>
+</head>
+<body style="text-align:center">
+<h2>Mouse handling</h2>
+<img id="img-tag" src="/home/student/Desktop/GOPIKA/image1.png" onmouseover="changeimg()" onmouseout="setOld()"
+width="220px"height="230px" alt="image"/>
+<script>
+function changeimg(){
+document.getElementById("img-tag").src="/home/student/Desktop/GOPIKA/image2.png";
+}
+function setOld()
+{
+document.getElementById("img-tag").src="/home/student/Desktop/GOPIKA/image1.png";
+}
+</script>
+</body>
+</html>
+
